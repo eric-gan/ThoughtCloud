@@ -1842,11 +1842,12 @@ input, select, textarea {
 		display: inline-block;
 		font-size: 0.6em;
 		font-weight: bold;
-		height: calc(4.75em + 2px);
+		height: 3.5em;
+		width: 17.5em;
 		letter-spacing: 0.25em;
-		line-height: 4.75em;
+		line-height: 3.5em;
 		outline: 0;
-		padding: 0 3.75em;
+		padding: 0 1.5em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
@@ -3870,14 +3871,15 @@ input, select, textarea {
 
 		#intro p {
 			font-size: 1.5em;
-			font-weight: 500;
+			font-weight: 600;
 			font-style: bold;
 			letter-spacing: 0;
+			font-color: #ffffff;
 		}
 
 		#intro h1 {
 			font-size: 3em;
-			letter-spacing: 5px;
+			letter-spacing: 10px;
 			font-weight: 600;
 		}
 
@@ -3887,7 +3889,7 @@ input, select, textarea {
 
 		#intro .button {
 			border: solid 2.5px;
-			font-size: 10px;
+			font-size: 0.55em;
 		}
 
 			@media screen and (max-width: 980px) {
