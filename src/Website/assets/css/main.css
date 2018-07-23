@@ -462,6 +462,8 @@ input, select, textarea {
 
 		.row > .col-12 {
 			width: 100%;
+			padding-right: 35%;
+			padding-left: 35%;
 		}
 
 		.row > .off-12 {
