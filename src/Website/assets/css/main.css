@@ -3510,7 +3510,9 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background-image: url("../../images/navclouds-blurred.jpg");
+		background-position: bottom left;
+		background-size: 18em auto;
 		cursor: default;
 		height: 100vh;
 		left: 0;
