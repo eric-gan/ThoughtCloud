@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		/*background: #312450;*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3226,7 +3226,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			/*background-color: #5e42a6;*/
+			background-image: url("../clouds.jpg");
 		}
 
 		.wrapper.style1-alt {
