@@ -3887,6 +3887,7 @@ input, select, textarea {
 
 		#intro .button {
 			border: solid 2.5px;
+			font-size: 10px;
 		}
 
 			@media screen and (max-width: 980px) {
