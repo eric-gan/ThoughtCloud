@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #469ab0;
+		background: #77B5FE;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2453,7 +2453,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #469ab0;
+			color: #77B5FE;
 			content: '\f00c';
 		}
 
@@ -3243,7 +3243,7 @@ input, select, textarea {
 
 		.wrapper.alt {
 			/*background-color: #5052b5;*/
-			background-color: #469ab0;
+			background-color: #77B5FE;
 		}
 
 		.wrapper.style1 {
@@ -3252,12 +3252,12 @@ input, select, textarea {
 
 		.wrapper.style1-alt {
 			/*background-color: #5052b5;*/
-			background-color: #469ab0;
+			background-color: #77B5FE;
 		}
 
 		.wrapper.style2 {
 			/*background-color: #5052b5;*/
-			background-color: #469ab0;
+			background-color: #77B5FE;
 		}
 
 		.wrapper.style2-alt {
