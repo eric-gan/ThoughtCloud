@@ -3543,6 +3543,10 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
+	#footer.wrapper.alt {
+		margin: 0;
+	}
+
 /* Sidebar */
 
 	#sidebar {
