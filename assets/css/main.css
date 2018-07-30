@@ -2226,7 +2226,8 @@ input, select, textarea {
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+		margin: 0;
+		background: #17E9E0;
 	}
 
 		form > :last-child {
@@ -3205,6 +3206,7 @@ input, select, textarea {
 			color: rgba(255, 255, 255, 0.8);
 		}
 
+
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
@@ -3235,7 +3237,6 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			/*background-color: #5e42a6;*/
-			background-image: url("../../clouds.jpg");
 		}
 
 		.wrapper.style1-alt {
