@@ -2980,7 +2980,7 @@ input, select, textarea {
 
 /* Spotlights */
 
-	.spotlights > section {
+/*	.spotlights > section {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3119,7 +3119,7 @@ input, select, textarea {
 				padding: 3em 2em 1em 2em ;
 			}
 
-		}
+		}*/
 
 /* Table */
 
