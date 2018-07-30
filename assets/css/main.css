@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: white;
+		background: #0c7d78;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3201,10 +3201,6 @@ input, select, textarea {
 
 /* Wrapper */
 
-	#wrapper.login {
-		background: #0c7d78;
-	}
-
 	.wrapper {
 		position: relative;
 	}
@@ -3383,7 +3379,6 @@ input, select, textarea {
 			-ms-transition-delay: 0.5s;
 			transition-delay: 0.5s;
 			opacity: 1;
-			background: rgba(255, 255, 255, 1);
 		}
 
 /* Header */
