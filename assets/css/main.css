@@ -462,8 +462,6 @@ input, select, textarea {
 
 		.row > .col-12 {
 			width: 100%;
-			padding-right: 35%;
-			padding-left: 35%;
 		}
 
 		.row > .off-12 {
@@ -2227,6 +2225,16 @@ input, select, textarea {
 
 	form {
 		margin: 0;
+	}
+
+	form.login {
+		margin: 0em 18em 3em 18em;
+		padding-top: 2em;
+		padding-bottom: 3em;
+		padding-left: 1em;
+		padding-right: 1em;
+		border-radius: 0.25em;
+    	border: 1px solid;
 	}
 
 		form > :last-child {
