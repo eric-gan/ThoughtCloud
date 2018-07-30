@@ -2534,7 +2534,8 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					/*color: #b74e91;*/
+					color: #FCE181;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3200,6 +3201,10 @@ input, select, textarea {
 			width: 75em;
 		}
 
+		.wrapper.style3 p {
+			color: rgba(255, 255, 255, 0.8);
+		}
+
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
@@ -3246,7 +3251,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			/*background-color: #b74e91;*/
+			background-color: #FCE181;
 		}
 
 		.wrapper.style3-alt {
