@@ -3864,7 +3864,7 @@ input, select, textarea {
 	#intro {
 		background-attachment: fixed;
 		background-image: url("../../images/clouds.jpg");
-		background-position: top right;
+		background-position: bottom;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
