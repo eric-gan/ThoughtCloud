@@ -3336,6 +3336,19 @@ input, select, textarea {
 			transform: translateY(1em);
 		}
 
+		.wrapper.style1.fade-up {
+			-moz-transition: opacity 2.5s ease-in-out;
+			-webkit-transition: opacity 2.5s ease-in-out;
+			-ms-transition: opacity 2.5s ease-in-out;
+			transition: opacity 2.5s ease-in-out;
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			transition-delay: 0.5s;
+			opacity: 1;
+			background: rgba(255, 255, 255, 1);
+		}
+
 		.wrapper.fade-down > .inner {
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
