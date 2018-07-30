@@ -3511,7 +3511,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background-image: url("../../images/clouds-blurred.jpg");
+		background-color: #ECECEC;
 		background-position: left;
 		background-size: auto 100%;
 		cursor: default;
