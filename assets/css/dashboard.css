@@ -197,10 +197,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, blue, white);
+				background-image: -webkit-linear-gradient(to right, blue, white);
+				background-image: -ms-linear-gradient(to right, blue, white);
+				background-image: linear-gradient(to right, blue, white);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -1324,16 +1324,17 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
+		background: #ECECEC;
+	}
+
+	.wrapper > section.main {
+		background: blue;
 	}
 
 		.wrapper > .inner {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
 			width: 75em;
-		}
-
-		.wrapper.style3 p {
-			color: rgba(255, 255, 255, 0.8);
 		}
 
 
