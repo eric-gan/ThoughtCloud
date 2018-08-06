@@ -1327,10 +1327,6 @@ input, select, textarea {
 		background: #ECECEC;
 	}
 
-	.wrapper > section.main {
-		background: blue;
-	}
-
 		.wrapper > .inner {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
