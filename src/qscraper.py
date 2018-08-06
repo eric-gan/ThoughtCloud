@@ -5,7 +5,14 @@ html = urllib.request.urlopen(url)
 
 soup = BeautifulSoup(html, 'html.parser')
 data = []
+topics = []
 for line in soup.find_all('p'):
     new_entry = line.text
     if len(new_entry) != 0 and new_entry[len(new_entry) - 1] == '?':
         data.append(new_entry)
+
+for line in soup.find_all('h2'):
+    new_entry = line.text
+    print(new_entry)
+    if 'questions' in new_entry:
+        topics.append(new_entry)
