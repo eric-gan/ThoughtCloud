@@ -46,6 +46,11 @@
 		<section id="main" class="wrapper">
 			<div class="inner">
 				<h1 class="major">Insert header</h1>
+				<ul>
+					{% for query in queries %}
+					<li>{{ query }}</li>
+					{% endfor %}
+				</ul>
 			</div>
 		</section>
 	</div>
