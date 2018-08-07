@@ -1,7 +1,9 @@
 import urllib.request
 from bs4 import BeautifulSoup
 from selenium import webdriver
-import time, os
+import time
+import os
+
 
 def scrape_questions():
     url = 'https://conversationstartersworld.com/philosophical-questions/'
@@ -14,6 +16,7 @@ def scrape_questions():
             data.append(new_entry)
     return data
 
+
 def scrape_quora(topic=None):
     """
     Scrapes quora for questions on a given topic
@@ -23,7 +26,7 @@ def scrape_quora(topic=None):
     """
     driver = webdriver.Chrome(os.path.join(os.getcwd(), 'chromedriver'))
     if topic is None:
-        url ='https://www.quora.com/topic/Science'
+        url = 'https://www.quora.com/topic/Science'
     else:
         url = 'https://www.quora.com/search?q=' + topic
     driver.get(url)
@@ -34,4 +37,3 @@ def scrape_quora(topic=None):
     for line in soup.find_all('span', class_="ui_qtext_rendered_qtext"):
         data.append(line.text)
     return data
-
