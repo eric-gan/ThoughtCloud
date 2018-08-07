@@ -14,38 +14,15 @@
 
 <body class="is-preload">
 
-	<!-- Header -->
-	<section id="sidebar">
-		<div class="inner">
-			<nav>
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="#one">Topic 1</a>
-					</li>
-					<li>
-						<a href="#three">Topic 2</a>
-					</li>
-					<li>
-						<a href="#three">Topic 3</a>
-					</li>
-					<li>
-						<a href="#three">Topic 4</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</section>
-
 	<!-- Wrapper -->
 	<div id="wrapper">
 
 		<!-- Main -->
-		<section id="main" class="wrapper">
-			<div class="inner">
-				<h1 class="major">Insert header</h1>
+		<section id="search" class="search">
+			<form method="POST">
+				<input name="search">
+				<input type="submit">
+			</form>
 				<ul>
 					{% for query in queries %}
 					<li>{{ query }}</li>
