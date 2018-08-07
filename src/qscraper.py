@@ -1,7 +1,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
 from selenium import webdriver
-import time
+import time, os
 
 def scrape_questions():
     url = 'https://conversationstartersworld.com/philosophical-questions/'
@@ -14,11 +14,24 @@ def scrape_questions():
             data.append(new_entry)
     return data
 
-def scrape_livesite():
-    driver = webdriver.Chrome()
-    url = 'https://www.quora.com/topic/Astrophysics'
-    driver.geturl(url)
-    html = driver.page_source
-    print(html)
+def scrape_quora(topic=None):
+    """
+    Scrapes quora for questions on a given topic
 
-scrape_livesite()
+    param topic: The topic to sort by
+    type topic: str
+    """
+    driver = webdriver.Chrome(os.path.join(os.getcwd(), 'chromedriver'))
+    if topic is None:
+        url ='https://www.quora.com/topic/Science'
+    else:
+        url = 'https://www.quora.com/search?q=' + topic
+    driver.get(url)
+    html = driver.page_source
+    driver.close()
+    soup = BeautifulSoup(html, 'html.parser')
+    data = []
+    for line in soup.find_all('span', class_="ui_qtext_rendered_qtext"):
+        data.append(line.text)
+    return data
+
