@@ -15,12 +15,12 @@
 <body class="is-preload">
 
 	<!-- Wrapper -->
-	<div id="wrapper">
+	<div id="results" class="wrapper">
 
 		<a href="{{ url_for('search') }}" class="button">Back to Search</a>
 
 		<!-- Main -->
-		<section id="results" class="results">
+		<section>
 				<ul>
 					{% for query in queries %}
 					<li>{{ query }}</li>
