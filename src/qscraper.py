@@ -26,7 +26,7 @@ def scrape_quora(topic=None):
     """
     driver = webdriver.Chrome(os.path.join(os.getcwd(), 'chromedriver.exe'))
     if topic is None:
-        url = 'https://www.quora.com/topic/Science'
+        return []
     else:
         url = 'https://www.quora.com/search?q=' + topic
     driver.get(url)
