@@ -24,8 +24,8 @@ def scrape_quora(topic=None):
     param topic: The topic to sort by
     type topic: str
     """
-    #driver = webdriver.Chrome(os.path.join(os.getcwd(), 'chromedriver'))
-    driver = webdriver.Chrome(os.path.join(os.getcwd(), 'chromedriver.exe'))
+    driver = webdriver.Chrome(os.path.join(os.getcwd(), 'chromedriver'))
+    #driver = webdriver.Chrome(os.path.join(os.getcwd(), 'chromedriver.exe'))
     if topic is None:
         return []
     else:
