@@ -339,23 +339,21 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(255, 255, 255, 0.15);
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
 		font-weight: bold;
 		height: 3.5em;
 		width: auto;
-		letter-spacing: 0.25em;
 		line-height: 3.5em;
 		outline: 0;
 		padding: 0 2.5em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
 		white-space: nowrap;
 	}
 
@@ -452,7 +450,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			border-color: rgba(255, 255, 255, 0.55);
 		}
 
 			input[type="submit"]:hover:after,
@@ -908,7 +906,6 @@ input, select, textarea {
 	background-image: url("../../images/clouds-search.jpg");
 	background-position: center;
 	background-size: cover;
-	opacity: 0.3;
 	height: 100vh;
 	width: 100vw;
 }
@@ -925,17 +922,56 @@ input, select, textarea {
 		text-align: left;
 		margin-top: 50vh;
 		margin-bottom: 50vh;
+		border: none;
+	}
+
+	@keyframes fade-in {
+		from {
+			background-color: rgba(255, 255, 255, 0);
+			border-color: rgba(255, 255, 255, 0);
+		}
+		to {
+			background-color: rgba(255, 255, 255, 0.5);
+			border-color: black;
+		}
+	}
+
+	#search #form form input {
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 0%;
+		border: solid 2px black;
+		font-size: 1em;
+		color: black;
+		padding: 0.1em 1em;
+		line-height: 2em;
+		height: auto;
+		letter-spacing: 1px;
+		animation-name: fade-in;
+		animation-duration: 2s;
+		animation-timing-function: ease-in;
 	}
 
 	#search #form form input[name="search"] {
-		color: black;
+		letter-spacing: 0;
+		font-weight: 400;
 	}
 
 	#search #form form input[type="submit"] {
 		margin-left: 1px;
-		background-color: rgba(0, 0, 0, 0.5);
-		border-radius: 10%;
+		font-weight: 600;
 	}
+
+		#search #form form input[type="submit"]:hover {
+			background-color: black;
+			color: white;
+			border-color: white;
+			-webkit-transition: ease-in-out;
+			-moz-transition: ease-in-out;
+			-o-transition: ease-in-out;
+			-webkit-transition-duration: 0.25s;
+			-moz-transition-duration: 0.25s;
+			-o-transition-duration: 0.25s;
+		}
 
 #results {
 	background: black;
