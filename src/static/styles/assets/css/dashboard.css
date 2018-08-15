@@ -900,7 +900,44 @@ input, select, textarea {
 		}
 
 
-/* Wrapper */
+/* Search */
+
+@keyframes background-fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes search-fade-down {
+	from {
+		background-color: transparent;
+		border-color: transparent;
+		color: transparent;
+		transform: translateY(-0.5em);
+	}
+	to {
+		background-color: rgba(255, 255, 255, 0.5);
+		border-color: black;
+		color: black;
+	}
+}
+
+@keyframes submit-fade-up {
+	from {
+		background-color: transparent;
+		border-color: transparent;
+		color: transparent;
+		transform: translateY(0.5em);
+	}
+	to {
+		background-color: rgba(255, 255, 255, 0.5);
+		border-color: black;
+		color: black;
+	}
+}
 
 #search {
 	background-image: url("../../images/clouds-search.jpg");
@@ -908,6 +945,9 @@ input, select, textarea {
 	background-size: cover;
 	height: 100vh;
 	width: 100vw;
+	animation-name: background-fade-in;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
 }
 
 	#search #form {
@@ -923,34 +963,6 @@ input, select, textarea {
 		margin-top: 50vh;
 		margin-bottom: 50vh;
 		border: none;
-	}
-
-	@keyframes fade-down {
-		from {
-			background-color: transparent;
-			border-color: transparent;
-			color: transparent;
-			transform: translateY(-0.5em);
-		}
-		to {
-			background-color: rgba(255, 255, 255, 0.5);
-			border-color: black;
-			color: black;
-		}
-	}
-
-	@keyframes fade-up {
-		from {
-			background-color: transparent;
-			border-color: transparent;
-			color: transparent;
-			transform: translateY(0.5em);
-		}
-		to {
-			background-color: rgba(255, 255, 255, 0.5);
-			border-color: black;
-			color: black;
-		}
 	}
 
 	#search #form form input {
@@ -969,7 +981,7 @@ input, select, textarea {
 		letter-spacing: 0;
 		font-weight: 400;
 		padding: 0.1em 0.5em;
-		animation-name: fade-down;
+		animation-name: search-fade-down;
 		animation-duration: 1s;
 		animation-timing-function: ease-in;
 	}
@@ -977,7 +989,7 @@ input, select, textarea {
 	#search #form form input[type="submit"] {
 		margin-left: 1px;
 		font-weight: 600;
-		animation-name: fade-up;
+		animation-name: submit-fade-up;
 		animation-duration: 1s;
 		animation-timing-function: ease-in;
 	}
