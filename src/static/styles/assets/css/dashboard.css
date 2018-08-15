@@ -981,6 +981,7 @@ input, select, textarea {
 		letter-spacing: 0;
 		font-weight: 400;
 		padding: 0.1em 0.5em;
+		width: 50vw;
 		animation-name: search-fade-down;
 		animation-duration: 1s;
 		animation-timing-function: ease-in;
