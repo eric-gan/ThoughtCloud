@@ -925,14 +925,31 @@ input, select, textarea {
 		border: none;
 	}
 
-	@keyframes fade-in {
+	@keyframes fade-down {
 		from {
-			background-color: rgba(255, 255, 255, 0);
-			border-color: rgba(255, 255, 255, 0);
+			background-color: transparent;
+			border-color: transparent;
+			color: transparent;
+			transform: translateY(-0.5em);
 		}
 		to {
 			background-color: rgba(255, 255, 255, 0.5);
 			border-color: black;
+			color: black;
+		}
+	}
+
+	@keyframes fade-up {
+		from {
+			background-color: transparent;
+			border-color: transparent;
+			color: transparent;
+			transform: translateY(0.5em);
+		}
+		to {
+			background-color: rgba(255, 255, 255, 0.5);
+			border-color: black;
+			color: black;
 		}
 	}
 
@@ -946,19 +963,23 @@ input, select, textarea {
 		line-height: 2em;
 		height: auto;
 		letter-spacing: 1px;
-		animation-name: fade-in;
-		animation-duration: 2s;
-		animation-timing-function: ease-in;
 	}
 
 	#search #form form input[name="search"] {
 		letter-spacing: 0;
 		font-weight: 400;
+		padding: 0.1em 0.5em;
+		animation-name: fade-down;
+		animation-duration: 1s;
+		animation-timing-function: ease-in;
 	}
 
 	#search #form form input[type="submit"] {
 		margin-left: 1px;
 		font-weight: 600;
+		animation-name: fade-up;
+		animation-duration: 1s;
+		animation-timing-function: ease-in;
 	}
 
 		#search #form form input[type="submit"]:hover {
