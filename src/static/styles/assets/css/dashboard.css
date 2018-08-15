@@ -347,11 +347,11 @@ input, select, textarea {
 		font-size: 0.6em;
 		font-weight: bold;
 		height: 3.5em;
-		width: 17.5em;
+		width: auto;
 		letter-spacing: 0.25em;
 		line-height: 3.5em;
 		outline: 0;
-		padding: 0 1.5em;
+		padding: 0 2.5em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
@@ -1166,10 +1166,35 @@ input, select, textarea {
 /* Wrapper */
 
 #search {
-	background: black;
+	background-image: url("../../images/clouds-search.jpg");
+	background-position: center;
+	background-size: cover;
+	opacity: 0.3;
 	height: 100vh;
 	width: 100vw;
 }
+
+	#search #form {
+		display: block;
+		text-align: center;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	#search #form form {
+		display: inline-block;
+		text-align: left;
+		margin-top: 50vh;
+		margin-bottom: 50vh;
+	}
+
+	#search #form form input[name="search"] {
+		color: black;
+	}
+
+	#search #form form input[type="submit"] {
+		
+	}
 
 #results {
 	background: black;
